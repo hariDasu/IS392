@@ -1,0 +1,97 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>IS392 Assignment 2: Retrieval Experiment</title>
+</head>
+
+<body>
+
+<p align="center"><b><font face="Bell MT">IS392 Assignment 2</font></b></p>
+<p align="center"><b><font face="Bell MT">Retrieval Experiment</font></b></p>
+<p align="center"><font face="Bell MT">by Srihari Rao</font></p>
+<p align="left"><font face="Bell MT"><b>Credits:</b></font></p>
+
+<ul>
+  <li>
+    <p align="left"><font face="Bell MT">The test collection used was <a 
+href="http://ir.dcs.gla.ac.uk/resources/test_collections/">LISA</a>.</font></li>  
+  <li>  
+    <p align="left"><font face="Bell MT">The experimental IR system was <a href="http://www-2.cs.cmu.edu/~mccallum/bow/">BOW   
+toolkit</a>, by <a href="http://www-2.cs.cmu.edu/~mccallum/">Andrew McCallum</a>.</font></li>   
+</ul>   
+<p><font face="Bell MT"><b>Query and Relevant Documents:</b></font></p>    
+<ul>    
+  <li><font face="Bell MT">The query for my experiment is Query 14:</font></li>     
+</ul>     
+<blockquote>     
+<p><font face="Bell MT">&quot;14<br>     
+I AM INTERESTED IN COGNITIVE MODELS OF LIBRARY USE. WHAT STUDIES OR ARTICLES ARE THERE LOOKING AT THE PSYCHOLOGY OF
+LIBRARY AND INFORMATION USE, I.E. STRATEGIES OF SEEKING, INFORMATION AND THE WAY ITS USEFULNESS IS PERCEIVED. USE OF
+LIBRARIES, LIBRARY MATERIALS, USE BEHAVIOUR, INFORMATION SEEKING BEHAVIOUR OR USE, USEFULNESS, PSYCHOLOGY OF LIBRARY
+AND INFORMATION USE, LIBRARY USER, USER SATISFACTION #
+&quot;</font></p>     
+</blockquote>     
+<ul>     
+  <li><font face="Bell MT">Relevant documents in the LISA text DB are:</font></li>     
+</ul>     
+<blockquote>     <p><font face="Bell MT">Query 14<br>       
+11 Relevant Refs:<br>       
+576 579 580 585 1082 2319 2627 3628 4589 4591 5386</font></p>      
+</blockquote>      
+<p><font face="Bell MT"><b>Part I: Results</b></font></p>  
+<p><font face="Bell MT"><b>1. Automatic Indexing:</b></font></p>   
+<ol>   
+  <li><font face="Bell MT">Model1: <a href="http://web.njit.edu/~sdr3/IS392/model1/vocabulary"> vocabulary    
+    file</a>, (default settings: no stemming, stopped words       
+    removed)</font></li>      
+  <li><font face="Bell MT">Model2: <a href="http://web.njit.edu/~sdr3/IS392/model2/vocabulary"> vocabulary    
+    file</a>, stemming<span lang="en-us">, stopped words removed.</span></font></li>  
+  <li><font face="Bell MT">Model3: <a href="http://web.njit.edu/~sdr3/IS392/model3/vocabulary"> vocabulary    
+    file</a>, <span lang="en-us">no stemming, </span>stopped words included</font></li>    
+</ol>    
+<p><font face="Bell MT"><b>2. Retrieval: Please list total number of documents retrieved, the link to top 50 documents     
+for each model, and which of top 50 documents match the relevant references 
+(please give their document numbers, unless none of the 
+top 50 matches.):</b></font></p>     
+<ol>     
+  <li><font face="Bell MT">Model1: 4,924 documents retrieved.&nbsp; <a
+  href="http://web.njit.edu/~sdr3/IS392/model1/retrieved_docs">Top    
+  50 documents</a>;4/50 relevant documents, 576,580,1082,4591 </font></li>    
+  <li><font face="Bell MT">Model2</font><font face="Bell MT">:</font> <font face="Bell MT">7,    
+    81 documents retrieved.&nbsp; <a href="http://web.njit.edu/~sdr3/IS392/model2/retrieved_docs">Top    
+    50 documents</a></font><font face="Bell MT">; 4/50 relevant documents, 576,1082,3628,4591 </font></li>   
+  <li><font face="Bell MT">Model3:</font> <font face="Bell MT">4, 924 documents    
+    retrieved.&nbsp; <a href="http://web.njit.edu/~sdr3/IS392/model3/retrieved_docs">Top    
+    50 documents</a></font><font face="Bell MT">; 4/50 relevant documents 576,580,1082,4591 </font>.</li>  
+</ol>  
+<p><font face="Bell MT"><b>Part II: Analysis of the 
+experimental results</b></font></p>     
+<p><font face="Bell MT"> </font></p>   
+   
+<p:colorscheme
+ colors="#FFFFFF,#000000,#1C1C1C,#333399,#00E4A8,#FFCF01,#FF0000,#3333CC"/>
+<div v:shape="_x0000_s3074" class="O" style="mso-margin-left-alt:216">
+  <span style="font-family:&quot;Bell 
+      MT&quot;;font-size:133%"> The analysis takes the given relevant results as the top results that are
+      most desired. What we notice in the results is that the exact same number of results are retrieved in model 1
+      and model3. Both model 1 and model 3 did not use the stemming technique; in model 1 stopped words were removed
+      and in model3 stopped words were included. This latter deviation may have changed the order of results but I
+      don't believe this is the anomaly that we are interested in analyzing with this experiment. When we actually
+      examine the result set we can see the flaws in adopting the technique of stemming if it is not implemented properly.
+      In model 2, when we click on the top 50 documents list we see that the results are limited to the words, "user",
+      "behaviour", or "user behavior" as a concatenated string. In the field of information retrieval, searching 
+      for stems has generally been deprecated in favor of algorithmically superior methods, such as searching for n-grams.
+      
+
+  </span>
+</div>
+   
+</body>   
+   
+</html>
+
